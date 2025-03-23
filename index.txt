@@ -1,0 +1,43 @@
+
+
+=> feature definition:
+   actions user registration / login logout / forgetpassword 
+   actions admin  delete user / add user / edit user ( add role / update user document / block account /lock account  )
+   create the feature and routes 
+   testing on postamn 
+    unit testing / integration testing / e2e testing
+    docs 
+    code review
+    mearge the main repo 
+
+-------------------------------------------------------------
+=>
+java Spring boot
+logging system 
+background jobs 
+realtion database (hipernate )
+redies cash layer (session managmenet )
+security (jwt token  / google auth  AOUTH2).
+images uplads s3 amazon 
+Docker 
+Docker compose 
+chatgpt api / deepSeek api 
+HttpClient
+Swagger 
+WebSockets
+stripe 
+paypal
+DI=> dependency injection
+class based 
+interface based
+Error handling.
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+microservices
+kafka
+rabbitmq
+grpc
+aws 
+DEVOPS
+-------------------------------------------------------------
