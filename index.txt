@@ -1,8 +1,6 @@
-
-
 => feature definition:
    actions user registration / login logout / forgetpassword 
-   actions admin  delete user / add user / edit user ( add role / update user document / block account /lock account  )
+   actions admin  delete user / add user / edit user ( add role / update user document / block account /lock account)
    create the feature and routes 
    testing on postamn 
     unit testing / integration testing / e2e testing
@@ -31,6 +29,7 @@ DI=> dependency injection
 class based 
 interface based
 Error handling.
+localization.
 -------------------------------------------------------------
 
 -------------------------------------------------------------
