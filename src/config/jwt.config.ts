@@ -9,16 +9,23 @@ export enum JWTEnvironment {
 }
 
 interface IJwtConfig {
-  secret: string;
-  expiresIn: string;
+  accessTokenSecret: string;
+  refreshTokenSecret: string;
+  accessTokenExpiresIn: string;
+  refreshTokenExpiresIn: string;
   logOutExpiredIn: string;
   cookieExpiredIn: string;
   environment: JWTEnvironment;
 }
 export const jwtConfig: IJwtConfig = {
-  secret: process.env.JWT_SECRET as string,
-  expiresIn: process.env.JWT_EXPIRES_IN as string,
-  logOutExpiredIn: process.env.JWT_LOGOUT_EXPIRES_IN as string,
-  cookieExpiredIn: process.env.JWT_COOKIE_EXPIRES_IN as string,
-  environment: process.env.NODE_ENV as JWTEnvironment,
+  accessTokenSecret:
+    process.env.JWT_ACCESS_TOKEN_SECRET || 'defaultAccessTokenSecret',
+  refreshTokenSecret:
+    process.env.JWT_REFRESH_TOKEN_SECRET || 'defaultRefreshTokenSecret',
+  accessTokenExpiresIn: process.env.JWT_ACCESS_TOKEN_EXPIRES_IN || '15m',
+  refreshTokenExpiresIn: process.env.JWT_REFRESH_TOKEN_EXPIRES_IN || '7d',
+  logOutExpiredIn: process.env.JWT_LOGOUT_EXPIRED_IN || '1d',
+  cookieExpiredIn: process.env.JWT_COOKIE_EXPIRED_IN || '7d',
+  environment:
+    (process.env.NODE_ENV as JWTEnvironment) || JWTEnvironment.Development,
 };
