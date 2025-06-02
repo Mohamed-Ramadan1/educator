@@ -1,0 +1,23 @@
+** Educator App TODO List **
+
+Features 
+    Auth => in progress.
+    Users(with rules management system) => in progress.
+    Notifications => in progress.
+    Support tickets => in progress.
+    Courses Managements and Enrollments => in progress.
+    Careers Managements and jobs opportunities => in progress.
+    Payments & Students subscriptions (monthly / yearly / financial aid ) subscriptions plans=> in progress.
+    Communities => in progress.
+    Groups => in progress.
+    Study plans => in progress.
+    News & Events => in progress.
+    CVs & Resumes => in progress.
+    Analytics & Reports => in progress.
+    Scheduled & Calendars => in progress.
+    Mentorship(single up to 3) => in progress.
+    AI Chatbot => in progress.
+    AI Career Advisor => in progress.
+    AI Resume Builder => in progress.
+    AI Course Recommender => in progress.
+    AI Study Plan Generator => in progress.

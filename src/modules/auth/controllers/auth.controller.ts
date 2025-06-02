@@ -14,6 +14,8 @@ export class AuthController {
     @Inject(IJWT_SERVICE) private readonly jwtService: IJwtService,
     @InjectQueue('auth') private readonly authQueue: Queue, // Replace 'any' with the actual type if available
   ) {}
+  public async register(): Promise<void> {}
+
   @Post('login')
   public async login(@Req() req: Request, @Res() res: Response) {
     const token: { refreshToken: string; accessToken: string } =
@@ -29,6 +31,10 @@ export class AuthController {
     await this.authQueue.add('login', {
       userId: 1,
     });
-    return { message: 'User logged in successfully' };
+    res.status(200).json({
+      accessToken: token.accessToken,
+      refreshToken: token.refreshToken,
+      message: 'Login successful',
+    });
   }
 }
