@@ -10,8 +10,8 @@ import { BullModule } from '@nestjs/bull';
   imports: [
     BullModule.forRoot({
       redis: {
-        host: redisConfig.host || 'localhost',
-        port: redisConfig.port || 6379,
+        host: redisConfig.host,
+        port: redisConfig.port,
       },
     }),
     LoggerModule,

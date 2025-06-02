@@ -21,3 +21,8 @@ Features
     AI Resume Builder => in progress.
     AI Course Recommender => in progress.
     AI Study Plan Generator => in progress.
+
+
+Technologies 
+    Nginx => in progress.
+    

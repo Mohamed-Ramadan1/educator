@@ -12,8 +12,6 @@ async function bootstrap() {
     type: VersioningType.URI,
     defaultVersion: '1',
   });
-  // app.getHttpAdapter().getInstance().set('trust proxy', 1); // Trust first proxy, useful for reverse proxies like Nginx
-
   await app.listen(process.env.PORT ?? 3000);
 }
 

@@ -4,7 +4,9 @@ import { PasswordManagementController } from './controllers/password-management.
 import { JwtModule } from '../../shared/jwt/jwt.module';
 import { BullModule } from '@nestjs/bull';
 import { AuthProcessor } from './queues/auth.processor';
+import { AuthService } from './services/auth.service';
 @Module({
+  providers: [AuthProcessor, AuthService],
   controllers: [AuthController, PasswordManagementController],
   imports: [
     BullModule.registerQueue({
@@ -21,6 +23,5 @@ import { AuthProcessor } from './queues/auth.processor';
     }),
     JwtModule,
   ],
-  providers: [AuthProcessor],
 })
 export class AuthModule {}
