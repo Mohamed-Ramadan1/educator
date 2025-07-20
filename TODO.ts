@@ -1,18 +1,9 @@
 /* 
-Auth Feature
-
-users Feature
-
-course Feature
-
-review Feature
-
-notification Feature
-*/
-
-/* 
-
-
-
-
+Setup EMails 
+Recreate the file structures 
+Notification System setup 
+Logging with Winston setup 
+Background jobs setup 
+AI integration setup
+Swagger documentation setup
 */
