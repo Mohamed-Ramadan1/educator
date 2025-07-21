@@ -3,6 +3,15 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { EmailsModule } from './emails/emails.module';
+import { QueueModule } from './queue/queue.module';
+import { NotificationsModule } from './notifications/notifications.module';
+import { LoggingModule } from './logging/logging.module';
+import { HelthModule } from './helth/helth.module';
+import { MonitoringModule } from './monitoring/monitoring.module';
+import { HealthModule } from './health/health.module';
+import { StorageModule } from './storage/storage.module';
+import { CacheModule } from './cache/cache.module';
 
 @Module({
   imports: [
@@ -23,6 +32,15 @@ import { AuthModule } from './modules/auth/auth.module';
     }),
     AuthModule,
     UsersModule,
+    EmailsModule,
+    QueueModule,
+    NotificationsModule,
+    LoggingModule,
+    HelthModule,
+    MonitoringModule,
+    HealthModule,
+    StorageModule,
+    CacheModule,
   ],
   controllers: [],
   providers: [],
