@@ -1,9 +1,10 @@
-/* 
-Setup EMails 
-Recreate the file structures 
-Notification System setup 
-Logging with Winston setup 
-Background jobs setup 
-AI integration setup
-Swagger documentation setup
+/*
+ TODO
+ 
+    - Setup EMails
+    - Setup Logging with winston 
+    - Setup notification system
+    - Setup background jobs
+    - Setup Swagger documentation
+
 */
