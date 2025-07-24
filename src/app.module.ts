@@ -29,6 +29,7 @@ import { CacheModule } from './cache/cache.module';
       synchronize: true,
       autoLoadEntities: true,
     }),
+
     AuthModule,
     UsersModule,
     EmailsModule,
