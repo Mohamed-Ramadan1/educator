@@ -4,7 +4,7 @@ import * as DailyRotateFile from 'winston-daily-rotate-file';
 import * as path from 'path';
 
 // Create logs directory path
-const logsDir = path.join(process.cwd(), 'src', 'logging', 'logs');
+const logsDir = path.join(process.cwd(), 'logs');
 
 export const winstonConfig: WinstonModuleOptions = {
   level: process.env.NODE_ENV === 'production' ? 'info' : 'debug',

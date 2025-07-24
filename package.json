@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@nestjs/bull": "^11.0.2",
+    "@nestjs/bullmq": "^11.0.2",
     "@nestjs/cache-manager": "^3.0.1",
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.2",
@@ -32,6 +33,7 @@
     "@nestjs/typeorm": "^11.0.0",
     "@types/nodemailer": "^6.4.17",
     "bull": "^4.16.5",
+    "bullmq": "^5.56.5",
     "cache-manager": "^6.4.2",
     "class-validator": "^0.14.2",
     "ioredis": "^5.6.1",
