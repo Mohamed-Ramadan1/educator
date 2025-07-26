@@ -11,7 +11,7 @@ import { MonitoringModule } from './monitoring/monitoring.module';
 import { HealthModule } from './health/health.module';
 import { StorageModule } from './storage/storage.module';
 import { CacheModule } from './cache/cache.module';
-
+import { LoggingService } from './logging/services/logging.service';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -44,4 +44,10 @@ import { CacheModule } from './cache/cache.module';
   controllers: [],
   providers: [],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private readonly loggingService: LoggingService) {}
+  // Additional initialization logic can go here
+  onModuleInit() {
+    this.loggingService.log('AppModule has been initialized');
+  }
+}
